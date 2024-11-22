@@ -1,7 +1,7 @@
 let titulo = document.querySelector('h1')
-titulo.textContent = 'Aula 09 manipular CSS'
+titulo.innerHTML = 'Aula 09 manipular CSS'
 let imagem = document.querySelector('#foto')
-imagem.setAttribute('src', '...images/pride-fc.jpg')
+imagem.setAttribute('src', './pride-fc.jpg')
 imagem.setAttribute('width', '280px')
 
 /* MANIPULAR CSS */

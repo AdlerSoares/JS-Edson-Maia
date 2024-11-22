@@ -11,12 +11,13 @@ function olaMundo() {
 
 /* Funções sem parametros e com retorno (function) */
 function olaMundo2() {
-    return 'Olá Mundo com retorno<br>'
+    const ola = document.write('Olá Mundo com Retorno<br>')
+    return ola
 }
 
 // CHAMAR A FUNCAO = executar ela
 olaMundo()
-document.write(olaMundo2())
+olaMundo2()
 
 let x = 2
 let y = 1
@@ -40,5 +41,7 @@ titulo.addEventListener('click', function(){
     console.log('Clicou no titulo')
 })
 
-const olaMundoArrow = () => document.write('Olá Mundo Arrow')
+const olaMundoArrow = () => {
+    document.write('Olá Mundo Arrow')
+}
 olaMundoArrow()
