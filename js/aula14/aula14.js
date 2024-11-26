@@ -13,26 +13,20 @@ let btnLimpar = document.querySelector('#btnLimpar')
 CAIXAS USE A PROPRIEDADE .value , MAS ANTES 
 DETERMINE UM EVENTO COMO REFERENCIA PARA PEGAR DADOS */
 
-btnEnviar.addEventListener('click', function(e){
+btnEnviar.addEventListener('click', function(event){
     // PEGAR VALUES
     let nome = cxNome.value
     let idade = cxIdade.value
     let peso = cxPeso.value
     let altura = cxAltura.value
     let imc = (peso / (altura * altura)).toFixed(1)
-
-    console.log(nome)
-    console.log(idade)
-    console.log(peso)
-    console.log(altura)
-    console.log(imc)
-
+    
     cxImc.value = imc
     let sit = situacaoDoPeso(imc)
     aviso.textContent = sit
 
     // SAIDA DE DADOS
-    let pessoa = {
+     let pessoa = {
         nome: nome,
         idade: idade,
         peso: peso,
@@ -47,7 +41,7 @@ btnEnviar.addEventListener('click', function(e){
     dados[4].textContent = pessoa.altura + ' m'
     dados[5].textContent = pessoa.imc + ' ' + pessoa.sit
     
-    e.preventDefault()
+    event.preventDefault()
 })
 
 function situacaoDoPeso(imc) {

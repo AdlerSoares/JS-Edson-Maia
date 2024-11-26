@@ -26,7 +26,7 @@ let botao2 = document.querySelector('#btn2')
 let botaoEnviar = document.querySelector('#btn3')
 
 // Mouseover a seta do mouse esta no element
-botao1.addEventListener('mouseover', function(){
+botao1.addEventListener('mouseover', () => {
     console.log('Foco no botão 1')
 })
 
@@ -36,7 +36,7 @@ botao2.addEventListener('blur', function(){
 })
 
 // 1 click do mouse
-botaoEnviar.addEventListener('click', function(event){
+botaoEnviar.addEventListener('click', (event) => {
     event.preventDefault()
     console.log('Clicou no botão Enviar')
 })

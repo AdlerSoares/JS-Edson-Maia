@@ -13,7 +13,7 @@ for(let i = 0; i < carros.length; i++){
 }
 
 let frutas = ['Pera', 'Uva', 'Maça', 'Banana', 'Melancia']
-frutas.forEach(function(fruta, i){
+frutas.forEach((fruta, i) => {
     document.write(`${i} ${fruta}<br>`)
 })
 

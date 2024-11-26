@@ -1,13 +1,13 @@
 /* Aula 12 de JS
 Estruturas Condicionais e de Escolha */
 
-let sit1 = document.querySelector('#sit1')
-let sit2 = document.querySelector('#sit2')
-let sit3 = document.querySelector('#sit3')
+let sit1 = document.querySelector('.sit1')
+let sit2 = document.querySelector('.sit2')
+let sit3 = document.querySelector('.sit3')
 let escolha = document.querySelector('#escolha')
 
-let notaFinal1 = 3
-let notaFinal2 = 8
+let notaFinal1 = 7
+let notaFinal2 = 10
 let notaFinal3 = 5
 
 /* CONDICIONAIS */
@@ -25,7 +25,7 @@ if (notaFinal1 >= 7) {
 }
 
 /* IF TERNARIO */
-notaFinal2 >= 7 ? sit2.textContent = 'Passou' : sit2.textContent = 'Ficou'
+notaFinal2 >= 7 ? sit2.innerHTML = 'Passou' : sit2.innerHTML = 'Ficou'
 
 /* IF ENCADEADO OU ANINHADO */
 if(notaFinal3 >= 7) {
